@@ -1,0 +1,62 @@
+[
+  {
+    "id": "piezas-soporte-gopro",
+    "name": "Soporte GoPro ajustable",
+    "slug": "soporte-gopro-ajustable",
+    "description": "Montura compatible con GoPro, ajuste suave, óptima para ciclismo.",
+    "material": "PETG",
+    "price": 12990,
+    "image": "/placeholder.svg",
+    "inStock": true
+  },
+  {
+    "id": "organizador-cables",
+    "name": "Organizador de cables (pack x5)",
+    "slug": "organizador-cables-pack5",
+    "description": "Clips para gestión de cables de escritorio.",
+    "material": "PLA+",
+    "price": 5990,
+    "image": "/placeholder.svg",
+    "inStock": true
+  },
+  {
+    "id": "carcasa-raspberry",
+    "name": "Carcasa Raspberry Pi con ventilación",
+    "slug": "carcasa-raspberry-pi",
+    "description": "Diseño compacto con rejillas de ventilación y acceso a puertos.",
+    "material": "ABS",
+    "price": 14990,
+    "image": "/placeholder.svg",
+    "inStock": false
+  },
+  {
+    "id": "gancho-pared",
+    "name": "Gancho de pared multiuso",
+    "slug": "gancho-pared-multiuso",
+    "description": "Resistente para llaves, cables y accesorios livianos.",
+    "material": "PETG",
+    "price": 3990,
+    "image": "/placeholder.svg",
+    "inStock": true
+  },
+  {
+    "id": "soporte-auriculares",
+    "name": "Soporte para auriculares",
+    "slug": "soporte-auriculares",
+    "description": "Diseño estable y minimalista para tu escritorio.",
+    "material": "PLA",
+    "price": 9990,
+    "image": "/placeholder.svg",
+    "inStock": true
+  },
+  {
+    "id": "topper-personalizado",
+    "name": "Topper personalizado (nombres)",
+    "slug": "topper-personalizado-nombres",
+    "description": "Ideal para tortas y eventos especiales.",
+    "material": "PLA",
+    "price": null,
+    "image": "/placeholder.svg",
+    "inStock": true
+  }
+]
