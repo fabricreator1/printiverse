@@ -6,7 +6,7 @@
     "description": "Montura compatible con GoPro, ajuste suave, óptima para ciclismo.",
     "material": "PETG",
     "price": 12990,
-    "image": "/placeholder.svg",
+    "image": "public/img/soporte gopro ajustable.jpeg",
     "inStock": true
   },
   {
@@ -36,7 +36,7 @@
     "description": "Resistente para llaves, cables y accesorios livianos.",
     "material": "PETG",
     "price": 3990,
-    "image": "/placeholder.svg",
+    "image": "public/img/2016-09-04_13.57.04_HDR.jpg",
     "inStock": true
   },
   {
@@ -46,7 +46,7 @@
     "description": "Diseño estable y minimalista para tu escritorio.",
     "material": "PLA",
     "price": 9990,
-    "image": "/placeholder.svg",
+    "image": "public/img/images.jpeg",
     "inStock": true
   },
   {
@@ -56,7 +56,7 @@
     "description": "Ideal para tortas y eventos especiales.",
     "material": "PLA",
     "price": null,
-    "image": "/placeholder.svg",
+    "image": "public/img/D_NQ_NP_772170-MLA75701700372_042024-O.webp",
     "inStock": true
   }
 ]
