@@ -96,7 +96,7 @@ const Productos = () => {
         <h2 id="impresiones-heading" className="font-display text-2xl md:text-3xl font-semibold tracking-tight">
           Impresiones 3D disponibles
         </h2>
-        <p className="mt-2 text-muted-foreground">Se cargan dinámicamente desde un archivo JSON.</p>
+        
 
         <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {products.map((p) => (
