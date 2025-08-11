@@ -151,13 +151,6 @@ const Contacto = () => {
           />
         </div>
 
-        {/* Input oculto con el webhook para Zapier */}
-        <input
-          type="hidden"
-          name="webhook"
-          value="https://hooks.zapier.com/hooks/catch/24159306/u6dka8g/"
-        />
-
         <Button type="submit" variant="hero" disabled={!isFormValid || loading}>
           {loading ? "Enviando..." : "Enviar"}
         </Button>
