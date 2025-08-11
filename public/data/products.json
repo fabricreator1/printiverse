@@ -16,7 +16,7 @@
     "description": "Clips para gestión de cables de escritorio.",
     "material": "PLA+",
     "price": 5990,
-    "image": "public/IMG_1535.webp",
+    "image": "public/img/IMG_1535.webp",
     "inStock": true
   },
   {
@@ -26,7 +26,7 @@
     "description": "Diseño compacto con rejillas de ventilación y acceso a puertos.",
     "material": "ABS",
     "price": 14990,
-    "image": "/placeholder.svg",
+    "image": "public/img/carcasa rasperry.jpg",
     "inStock": false
   },
   {
