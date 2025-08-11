@@ -2,6 +2,7 @@ import heroImage from "@/assets/hero-printiverse.jpg";
 import { Button } from "@/components/ui/button";
 import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
+import { Layers, BadgeCheck, Rocket, Zap, Package } from "lucide-react";
 
 const Index = () => {
   return (
@@ -33,10 +34,16 @@ const Index = () => {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild variant="hero" size="lg" className="hover-scale">
-                <Link to="/contacto">Cotiza tu proyecto</Link>
+                <Link to="/contacto" className="inline-flex items-center gap-2">
+                  <Zap className="h-5 w-5" aria-hidden="true" />
+                  Cotiza tu proyecto
+                </Link>
               </Button>
               <Button asChild variant="outline" size="lg" className="hover-scale">
-                <Link to="/productos">Ver productos</Link>
+                <Link to="/productos" className="inline-flex items-center gap-2">
+                  <Package className="h-5 w-5" aria-hidden="true" />
+                  Ver productos
+                </Link>
               </Button>
             </div>
           </div>
@@ -44,18 +51,34 @@ const Index = () => {
       </header>
 
       <main className="container mx-auto px-6 py-16">
-        <section className="grid md:grid-cols-3 gap-6">
+        <section className="grid md:grid-cols-3 gap-6" aria-labelledby="features-title">
+          <h2 id="features-title" className="sr-only">Características principales de impresión 3D</h2>
           <article className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-brand transition-shadow">
-            <h3 className="font-display text-xl font-semibold">Materiales variados</h3>
-            <p className="mt-2 text-muted-foreground">PLA, PETG, ABS, TPU y más para cada necesidad.</p>
+            <div className="flex items-center gap-3">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <Layers className="h-5 w-5" aria-hidden="true" />
+              </span>
+              <h3 className="font-display text-xl font-semibold">Materiales variados</h3>
+            </div>
+            <p className="mt-4 text-muted-foreground">PLA, PETG, ABS, TPU y más para cada necesidad.</p>
           </article>
           <article className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-brand transition-shadow">
-            <h3 className="font-display text-xl font-semibold">Calidad y precisión</h3>
-            <p className="mt-2 text-muted-foreground">Capas finas, tolerancias cuidadas y acabados prolijos.</p>
+            <div className="flex items-center gap-3">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <BadgeCheck className="h-5 w-5" aria-hidden="true" />
+              </span>
+              <h3 className="font-display text-xl font-semibold">Calidad y precisión</h3>
+            </div>
+            <p className="mt-4 text-muted-foreground">Capas finas, tolerancias cuidadas y acabados prolijos.</p>
           </article>
           <article className="rounded-lg border bg-card p-6 shadow-sm hover:shadow-brand transition-shadow">
-            <h3 className="font-display text-xl font-semibold">Entrega rápida</h3>
-            <p className="mt-2 text-muted-foreground">Cotizaciones ágiles y plazos competitivos.</p>
+            <div className="flex items-center gap-3">
+              <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                <Rocket className="h-5 w-5" aria-hidden="true" />
+              </span>
+              <h3 className="font-display text-xl font-semibold">Entrega rápida</h3>
+            </div>
+            <p className="mt-4 text-muted-foreground">Cotizaciones ágiles y plazos competitivos.</p>
           </article>
         </section>
       </main>
