@@ -6,7 +6,7 @@
     "description": "Montura compatible con GoPro, ajuste suave, óptima para ciclismo.",
     "material": "PETG",
     "price": 12990,
-    "image": "public/img/soporte gopro ajustable.jpeg",
+    "image": "img/soporte gopro ajustable.jpeg",
     "inStock": true
   },
   {
@@ -16,7 +16,7 @@
     "description": "Clips para gestión de cables de escritorio.",
     "material": "PLA+",
     "price": 5990,
-    "image": "public/img/IMG_1535.webp",
+    "image": "img/IMG_1535.webp",
     "inStock": true
   },
   {
@@ -26,7 +26,7 @@
     "description": "Diseño compacto con rejillas de ventilación y acceso a puertos.",
     "material": "ABS",
     "price": 14990,
-    "image": "public/img/carcasa rasperry.jpg",
+    "image": "img/carcasa rasperry.jpg",
     "inStock": false
   },
   {
@@ -36,7 +36,7 @@
     "description": "Resistente para llaves, cables y accesorios livianos.",
     "material": "PETG",
     "price": 3990,
-    "image": "public/img/2016-09-04_13.57.04_HDR.jpg",
+    "image": "img/2016-09-04_13.57.04_HDR.jpg",
     "inStock": true
   },
   {
@@ -46,7 +46,7 @@
     "description": "Diseño estable y minimalista para tu escritorio.",
     "material": "PLA",
     "price": 9990,
-    "image": "public/img/images.jpeg",
+    "image": "img/images.jpeg",
     "inStock": true
   },
   {
@@ -56,7 +56,7 @@
     "description": "Ideal para tortas y eventos especiales.",
     "material": "PLA",
     "price": null,
-    "image": "public/img/D_NQ_NP_772170-MLA75701700372_042024-O.webp",
+    "image": "img/D_NQ_NP_772170-MLA75701700372_042024-O.webp",
     "inStock": true
   }
 ]
