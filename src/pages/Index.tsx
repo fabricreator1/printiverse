@@ -34,7 +34,7 @@ const Index = () => {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button asChild variant="hero" size="lg" className="hover-scale">
-                <Link to="/contacto" className="inline-flex items-center gap-2">
+                <Link to="/contacto?asunto=cotizacion" className="inline-flex items-center gap-2">
                   <Zap className="h-5 w-5" aria-hidden="true" />
                   Cotiza tu proyecto
                 </Link>

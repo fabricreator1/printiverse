@@ -28,7 +28,7 @@ const SiteHeader = () => {
         </nav>
         <div className="hidden md:block">
           <Button asChild variant="hero" size="sm">
-            <Link to="/contacto">Cotiza ahora</Link>
+            <Link to="/contacto?asunto=cotizacion">Cotiza ahora</Link>
           </Button>
         </div>
       </div>

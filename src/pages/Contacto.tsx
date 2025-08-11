@@ -1,5 +1,6 @@
 import SEO from "@/components/SEO";
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
@@ -8,6 +9,10 @@ import { toast } from "sonner";
 const Contacto = () => {
   const [loading, setLoading] = useState(false);
 
+  const [searchParams] = useSearchParams();
+  const asuntoParam = (searchParams.get("asunto") || "").toLowerCase();
+  const allowedAsuntos = ["cotizacion", "soporte", "consulta"];
+  const defaultAsunto = allowedAsuntos.includes(asuntoParam) ? asuntoParam : "";
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -15,6 +20,7 @@ const Contacto = () => {
     const data = new FormData(form);
     const nombre = (data.get("nombre") || "").toString().trim();
     const correo = (data.get("correo") || "").toString().trim();
+    const asunto = (data.get("asunto") || "").toString().trim();
     const mensaje = (data.get("mensaje") || "").toString().trim();
     const webhook = (data.get("webhook") || "").toString().trim();
 
@@ -32,6 +38,7 @@ const Contacto = () => {
         body: JSON.stringify({
           nombre,
           correo,
+          asunto,
           mensaje,
           page: "contacto",
           timestamp: new Date().toISOString(),
@@ -65,6 +72,15 @@ const Contacto = () => {
         <div>
           <label className="text-sm" htmlFor="correo">Correo</label>
           <Input id="correo" name="correo" required type="email" placeholder="tu@correo.com" />
+        </div>
+        <div>
+          <label className="text-sm" htmlFor="asunto">Asunto</label>
+          <select id="asunto" name="asunto" required defaultValue={defaultAsunto} className="mt-1 block w-full rounded-md border bg-background px-3 py-2 text-sm">
+            <option value="" disabled>Selecciona un asunto</option>
+            <option value="cotizacion">Cotización</option>
+            <option value="soporte">Soporte</option>
+            <option value="consulta">Consulta general</option>
+          </select>
         </div>
         <div>
           <label className="text-sm" htmlFor="mensaje">Mensaje</label>
