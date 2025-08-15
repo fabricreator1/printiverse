@@ -72,7 +72,7 @@ const Productos = () => {
         Estos son ejemplos de lo que podemos fabricar. Cada pieza se cotiza según material, tamaño y complejidad.
       </p>
 
-      {/* Categorías (se mantiene) */}
+      {/* Categorías */}
       <section className="mt-8" aria-labelledby="categorias-heading">
         <h2 id="categorias-heading" className="sr-only">Categorías de productos</h2>
         <div className="grid gap-6 md:grid-cols-3">
@@ -91,12 +91,11 @@ const Productos = () => {
         </div>
       </section>
 
-      {/* Impresiones disponibles desde JSON */}
+      {/* Impresiones disponibles */}
       <section className="mt-12" aria-labelledby="impresiones-heading">
         <h2 id="impresiones-heading" className="font-display text-2xl md:text-3xl font-semibold tracking-tight">
           Impresiones 3D disponibles
         </h2>
-        
 
         <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {products.map((p) => (
@@ -105,12 +104,12 @@ const Productos = () => {
                 <CardTitle className="leading-tight">{p.name}</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="aspect-video overflow-hidden rounded-md border">
+                <div className="overflow-hidden rounded-md border bg-white flex items-center justify-center p-2">
                   <img
                     src={p.image || "/placeholder.svg"}
                     alt={`${p.name} — impresión 3D`}
                     loading="lazy"
-                    className="h-full w-full object-cover"
+                    className="max-h-60 w-auto object-contain hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
                       (e.currentTarget as HTMLImageElement).src = "/placeholder.svg";
                     }}
@@ -122,7 +121,9 @@ const Productos = () => {
                 <div className="mt-4 flex items-center justify-between text-sm">
                   <span className="text-muted-foreground">Material: {p.material || "—"}</span>
                   {typeof p.price === "number" ? (
-                    <span className="font-medium text-primary">${new Intl.NumberFormat("es-CL").format(p.price)}</span>
+                    <span className="font-medium text-primary">
+                      ${new Intl.NumberFormat("es-CL").format(p.price)}
+                    </span>
                   ) : (
                     <span className="text-muted-foreground">A cotizar</span>
                   )}

@@ -133,3 +133,13 @@ All colors MUST be HSL.
 
   .hover-scale { @apply transition-transform duration-200 hover:scale-105; }
 }
+/* prueba */
+
+@layer components {
+  .product-image {
+    @apply w-full h-48 object-cover rounded-lg;
+  }
+}
+
+
+/* prueba */
