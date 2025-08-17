@@ -10,8 +10,9 @@ const SobreNosotros = () => {
       />
       <h1 className="font-display text-3xl md:text-4xl font-bold">Sobre nosotros</h1>
       <p className="mt-4 max-w-2xl text-muted-foreground">
-        En Printiverse creemos que las buenas ideas merecen materializarse. Trabajamos con tecnología FDM de alto rendimiento y un proceso
-        de control de calidad para asegurar resultados consistentes, desde prototipos hasta series cortas.
+        En Printiverse creemos que todas las ideas, grandes o pequeñas, merecen hacerse realidad. ✨
+Usamos impresión 3D con tecnología FDM de alta calidad y cuidamos cada detalle en el proceso, para que tus piezas salgan tal como las imaginaste.
+Ya sea un prototipo, una pieza personalizada o una pequeña producción, te acompañamos en cada paso para que tu proyecto cobre vida. 🚀
       </p>
     </div>
   );
