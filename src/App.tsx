@@ -11,6 +11,8 @@ import Contacto from "./pages/Contacto";
 import SobreNosotros from "./pages/SobreNosotros";
 import Legales from "./pages/Legales";
 import Layout from "./components/layout/Layout";
+import WhatsAppButton from "./components/WhatsAppButton";
+
 
 const queryClient = new QueryClient();
 
@@ -32,6 +34,7 @@ const App = () => (
           </Route>
         </Routes>
       </BrowserRouter>
+      <WhatsAppButton />
     </TooltipProvider>
   </QueryClientProvider>
 );
