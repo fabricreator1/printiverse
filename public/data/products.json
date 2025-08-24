@@ -36,7 +36,7 @@
     "description": "Resistente para llaves, cables y accesorios livianos.",
     "material": "PETG",
     "price": 3990,
-    "image": "public/img/gancho.png",
+    "image": "img/gancho.png",
     "inStock": true
   },
   {
@@ -46,7 +46,7 @@
     "description": "Diseño estable y minimalista para tu escritorio.",
     "material": "PLA",
     "price": 9990,
-    "image": "public/img/soporteaudifonos.png",
+    "image": "img/soporteaudifonos.png",
     "inStock": true
   },
   {
@@ -56,7 +56,7 @@
     "description": "Ideal para tortas y eventos especiales.",
     "material": "PLA",
     "price": null,
-    "image": "public/img/topper.png",
+    "image": "img/topper.png",
     "inStock": true
   }
 ]
