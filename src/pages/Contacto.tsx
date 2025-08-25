@@ -123,7 +123,7 @@ const Contacto = () => {
             Asunto
           </label>
           <Select onValueChange={(value)=>{setAsunto(value)}} value={asunto}>
-            <SelectTrigger className="w-[180px]">
+            <SelectTrigger className="w-full text-left">
               <SelectValue placeholder="Selecciona un asunto." />
             </SelectTrigger>
             <SelectContent>
