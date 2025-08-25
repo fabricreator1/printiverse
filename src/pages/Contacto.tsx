@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { cn } from "@/lib/utils";
 
 const Contacto = () => {
   const [loading, setLoading] = useState(false);
@@ -123,7 +124,7 @@ const Contacto = () => {
             Asunto
           </label>
           <Select onValueChange={(value)=>{setAsunto(value)}} value={asunto}>
-            <SelectTrigger className="w-full text-left">
+            <SelectTrigger className={cn('w-full text-left', asunto ? 'text-foreground' : 'text-muted-foreground')}>
               <SelectValue placeholder="Selecciona un asunto." />
             </SelectTrigger>
             <SelectContent>
