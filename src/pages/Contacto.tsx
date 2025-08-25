@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 const Contacto = () => {
   const [loading, setLoading] = useState(false);
@@ -121,21 +122,18 @@ const Contacto = () => {
           <label className="text-sm" htmlFor="asunto">
             Asunto
           </label>
-          <select
-            id="asunto"
-            name="asunto"
-            required
-            value={asunto}
-            onChange={(e) => setAsunto(e.target.value)}
-            className="mt-1 block w-full rounded-md border bg-background px-3 py-2 text-sm"
-          >
-            <option value="" disabled>
-              Selecciona un asunto
-            </option>
-            <option value="cotizacion">Cotización</option>
-            <option value="soporte">Soporte</option>
-            <option value="consulta">Consulta general</option>
-          </select>
+          <Select onValueChange={(value)=>{setAsunto(value)}} value={asunto}>
+            <SelectTrigger className="w-[180px]">
+              <SelectValue placeholder="Selecciona un asunto." />
+            </SelectTrigger>
+            <SelectContent>
+              <SelectGroup>
+                <SelectItem value="cotizacion">Cotización</SelectItem>
+                <SelectItem value="soporte">Soporte</SelectItem>
+                <SelectItem value="consulta">Consulta general</SelectItem>
+              </SelectGroup>
+            </SelectContent>
+          </Select>
         </div>
         <div>
           <label className="text-sm" htmlFor="mensaje">
